@@ -1,1 +1,1 @@
-https://patrycjamusial.github.io/goit-markup-hw-05/
+https://patrycjamusial.github.io/goit-markup-hw-06/
