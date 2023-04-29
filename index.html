@@ -70,6 +70,39 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <h3 class="modal-text">Zostaw swoje dane w formularzu poniżej</h3>
+              <form class="modal-form">
+                <label>
+                  Imię
+                  <input type="text" name="name" class="modal-input" />
+                  <svg width="18px" height="18px" class="modal-icon">
+                    <use href="./images/icons.svg#icon-person-black"></use>
+                  </svg>
+                </label>
+                <label>
+                  Telefon
+                  <input type="tel" name="telephone" class="modal-input" />
+                  <svg width="18px" height="18px" class="modal-icon">
+                    <use href="./images/icons.svg#icon-phone-black"></use>
+                  </svg>
+                </label>
+                <label>
+                  E-mail
+                  <input type="email" name="email" class="modal-input" />
+                  <svg width="18px" height="18px" class="modal-icon">
+                    <use href="./images/icons.svg#icon-email-black"></use>
+                  </svg>
+                </label>
+                <label>
+                  Komentarz
+                  <input
+                    type="text"
+                    name="comment"
+                    placeholder="Wprowadź tekst"
+                    class="modal-input"
+                  />
+                </label>
+              </form>
               <button class="icon-modal-close" data-modal-close>X</button>
             </div>
           </div>
@@ -407,6 +440,23 @@
             </a>
           </div>
         </div>
+
+        <form name="singup-form" class="newsletter">
+          <label class="newsletter-text"
+            >ZAPISZ SIĘ DO NEWSLETTERA
+            <input
+              class="newsletter-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+          /></label>
+          <button type="submit" class="button-send">
+            Zapisz się
+            <svg width="24px" height="24px" class="newsletter-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
