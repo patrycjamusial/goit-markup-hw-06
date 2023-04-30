@@ -73,34 +73,46 @@
               <h3 class="modal-text">Zostaw swoje dane w formularzu poniżej</h3>
               <form class="modal-form">
                 <label>
-                  Imię
-                  <input type="text" name="name" class="modal-input" />
-                  <svg width="18px" height="18px" class="modal-icon">
-                    <use href="./images/icons.svg#icon-person-black"></use>
-                  </svg>
+                  <p>Imię</p>
+                  <div class="modal-form-input">
+                    <svg width="18px" height="18px" class="modal-icon">
+                      <use href="./images/icons.svg#icon-person-black"></use>
+                    </svg>
+                    <input type="text" name="name" class="modal-input" />
+                  </div>
                 </label>
                 <label>
-                  Telefon
-                  <input type="tel" name="telephone" class="modal-input" />
-                  <svg width="18px" height="18px" class="modal-icon">
-                    <use href="./images/icons.svg#icon-phone-black"></use>
-                  </svg>
+                  <p>Telefon</p>
+                  <div class="modal-form-input">
+                    <svg width="18px" height="18px" class="modal-icon">
+                      <use href="./images/icons.svg#icon-phone-black"></use>
+                    </svg>
+                    <input type="tel" name="telephone" class="modal-input" />
+                  </div>
                 </label>
                 <label>
-                  E-mail
-                  <input type="email" name="email" class="modal-input" />
-                  <svg width="18px" height="18px" class="modal-icon">
-                    <use href="./images/icons.svg#icon-email-black"></use>
-                  </svg>
+                  <p>E-mail</p>
+                  <div class="modal-form-input">
+                    <svg width="18px" height="18px" class="modal-icon">
+                      <use href="./images/icons.svg#icon-email-black"></use>
+                    </svg>
+                    <input type="email" name="email" class="modal-input" />
+                  </div>
                 </label>
                 <label>
-                  Komentarz
-                  <input
-                    type="text"
-                    name="comment"
-                    placeholder="Wprowadź tekst"
-                    class="modal-input"
-                  />
+                  <p>Komentarz</p>
+                  <div class="modal-form-input">
+                    <textarea
+                      type="text"
+                      name="comment"
+                      rows="6"
+                      placeholder="Wprowadź tekst"
+                      class="modal-input"
+                    ></textarea>
+                  </div>
+                </label>
+                <label>
+                  <input type="checkbox" />
                 </label>
               </form>
               <button class="icon-modal-close" data-modal-close>X</button>
