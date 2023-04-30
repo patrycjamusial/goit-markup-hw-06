@@ -111,9 +111,25 @@
                     ></textarea>
                   </div>
                 </label>
-                <label>
-                  <input type="checkbox" />
-                </label>
+                <div class="checkbox">
+                  <input
+                    type="checkbox"
+                    id="check"
+                    name="checkbox"
+                    class="checkbox-input"
+                  />
+                  <label class="checkbox-label" for="check"
+                    ><svg width="13px" height="10px" class="checkbox-icon">
+                      <use href="./images/icons.svg#icon-checkbox"></use>
+                    </svg>
+                  </label>
+                  <p class="checkbox-text">
+                    Oświadczam iż akceptuję
+                    <a href="#" class="checkbox-link">Regulamin</a> i
+                    <a href="#" class="checkbox-link">Politykę Prywatności.</a>
+                  </p>
+                </div>
+                <button type="submit" class="button-send">Wyślij</button>
               </form>
               <button class="icon-modal-close" data-modal-close>X</button>
             </div>
@@ -452,7 +468,6 @@
             </a>
           </div>
         </div>
-
         <form name="singup-form" class="newsletter">
           <label class="newsletter-text"
             >ZAPISZ SIĘ DO NEWSLETTERA
