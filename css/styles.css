@@ -72,6 +72,9 @@ textarea {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
+.button-send:hover {
+  cursor: pointer;
+}
 .contact {
   font-style: normal;
   display: flex;
@@ -140,13 +143,15 @@ textarea {
 .container-transform:hover .overlay,
 .container-transform:focus .overlay {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox {
   position: relative;
   display: flex;
   align-items: center;
-  margin: 18px 0 22px 0;
+  margin: 18px 14px 22px 14px;
 }
 .checkbox-icon {
   position: absolute;
@@ -167,6 +172,10 @@ textarea {
   width: 16px;
   height: 15px;
 }
+.checkbox-label:focus,
+.checkbox-label:hover {
+  border-color: var(--brand-color-blue);
+}
 .checkbox-link {
   color: var(--brand-color-blue);
 }
@@ -180,7 +189,7 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--brand-color-text-grey);
-  padding-left: 12px;
+  padding-left: 8px;
 }
 .list-portfolio-item:hover .overlay,
 .list-portfolio-item:focus .overlay {
@@ -398,6 +407,7 @@ textarea {
   border: none;
   outline: none;
   margin-left: 12px;
+  width: 420px;
 }
 .modal-form label p {
   display: flex;
@@ -424,7 +434,8 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:focus-within {
+.modal-form-input:focus-within,
+.modal-form-input:hover {
   border-color: var(--brand-color-blue);
 }
 .modal-icon {
@@ -434,7 +445,8 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-input:focus-within .modal-icon {
+.modal-form-input:focus-within .modal-icon,
+.modal-form-input:hover .modal-icon {
   fill: var(--brand-color-blue);
 }
 .motto {
@@ -487,6 +499,7 @@ textarea {
   display: flex;
 }
 .newsletter-input {
+  color: var(--brand-color-white);
   display: flex;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -495,6 +508,11 @@ textarea {
   margin: 20px 12px 94px 0;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   width: 358px;
+  outline: none;
+}
+.newsletter-input:focus,
+.newsletter-input:hover {
+  border-color: var(--brand-color-blue);
 }
 .newsletter-text {
   font-size: 14px;
@@ -668,6 +686,9 @@ textarea {
   top: 0;
   left: 0;
   transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay p {
   font-size: 18px;
